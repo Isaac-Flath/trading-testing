@@ -3,6 +3,10 @@
 # %% auto 0
 __all__ = ['RandomModel']
 
+# %% ../30_models.ipynb 4
+from .datamodule import *
+from .utils import *
+
 # %% ../30_models.ipynb 5
 import pandas as pd
 import numpy as np
