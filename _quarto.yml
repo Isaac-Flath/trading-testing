@@ -14,7 +14,7 @@ format:
     toc: true
 
 website:
-  title: "trading_testing"
+  title: "tradingtesting"
   description: "example testing library for book"
   execute: 
     enabled: false
@@ -22,7 +22,7 @@ website:
   open-graph: true
   reader-mode: true
   repo-branch: main
-  repo-url: https://github.com/Isaac-Flath/trading_testing/tree/main/
+  repo-url: https://github.com/Isaac-Flath/tradingtesting/tree/main/
   repo-actions: [issue]
   navbar:
     background: primary
@@ -32,7 +32,7 @@ website:
         file: index.ipynb
     right:
       - icon: github
-        href: https://github.com/Isaac-Flath/trading_testing/tree/main/
+        href: https://github.com/Isaac-Flath/tradingtesting/tree/main/
   sidebar:
     style: "floating"
 

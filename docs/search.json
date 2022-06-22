@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "datamodule.html",
+    "href": "datamodule.html",
+    "title": "datamodule",
+    "section": "",
+    "text": "fpath = 'https://raw.githubusercontent.com/Isaac-Flath/trading/main/data/eod-quotemedia.csv'"
+  },
+  {
+    "objectID": "datamodule.html#getters",
+    "href": "datamodule.html#getters",
+    "title": "datamodule",
+    "section": "Getters",
+    "text": "Getters\n\n\nCsvGetter\n\n CsvGetter (fpath)\n\nInitialize self. See help(type(self)) for accurate signature.\ndf = CsvGetter(fpath)()\ntest_eq(df.shape,(490737,3))"
+  },
+  {
+    "objectID": "datamodule.html#setters",
+    "href": "datamodule.html#setters",
+    "title": "datamodule",
+    "section": "Setters",
+    "text": "Setters\n\n\nSizeSplitter\n\n SizeSplitter (sizes=None)\n\nInitialize self. See help(type(self)) for accurate signature.\ndf = CsvGetter(fpath)()\ndataset = SizeSplitter()(df)\ntest_eq(dataset.train.shape,(242680, 3))\ntest_eq(dataset.keys(),['train','valid','test'])"
+  },
+  {
+    "objectID": "datamodule.html#datamodule",
+    "href": "datamodule.html#datamodule",
+    "title": "datamodule",
+    "section": "DataModule",
+    "text": "DataModule\n\n\nDataModule\n\n DataModule (getter, splitter)\n\nInitialize self. See help(type(self)) for accurate signature.\ndm = DataModule(CsvGetter(fpath),SizeSplitter())\ntest_eq(dm.datasets.train.shape,(242680, 3))\ntest_eq(dm.datasets.keys(),['train','valid','test'])"
+  },
+  {
+    "objectID": "models.html",
+    "href": "models.html",
+    "title": "models",
+    "section": "",
+    "text": "fpath = 'https://raw.githubusercontent.com/Isaac-Flath/trading/main/data/eod-quotemedia.csv'\n\n\nRandomModel\n\n RandomModel (action_probs)\n\nInitialize self. See help(type(self)) for accurate signature.\n# dm = DataModule(CsvGetter(fpath),SizeSplitter())\n# action_probs = {'buy':.5,'short':.1}\n# h0 = RandomModel(action_probs)\n# _out = h0(dm.datasets.train.sample(1000))\n# assert _out[_out.action=='buy'].shape[0] > _out[_out.action=='short'].shape[0]*2"
+  },
+  {
+    "objectID": "utils.html",
+    "href": "utils.html",
+    "title": "utils",
+    "section": "",
+    "text": "get_next_trading_day\n\n get_next_trading_day (dte, unique_dates, dates_dict)"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Project name here",
+    "section": "",
+    "text": "This file will become your README and also the index of your documentation."
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "Project name here",
+    "section": "Install",
+    "text": "Install\npip install your_project_name"
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "Project name here",
+    "section": "How to use",
+    "text": "How to use\nFill me in please! Don’t forget code examples:\n\n1+1\n\n2"
+  }
+]
